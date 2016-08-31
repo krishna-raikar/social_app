@@ -51,4 +51,3 @@ production:
   database: social_app_production
   username: postgres
   password: postgres
-  template: template0
