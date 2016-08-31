@@ -49,3 +49,4 @@ test:
 production:
   <<: *default
   database: social_app_production
+  template: template1
