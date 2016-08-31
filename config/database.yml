@@ -10,12 +10,11 @@
 #   http://dev.mysql.com/doc/refman/5.0/en/old-client.html
 #
 default: &default
-  adapter: mysql2
-  encoding: utf8
+  adapter: postgresql
+  encoding: unicode
   pool: 5
-  username: root
-  password: root
-  socket: /var/run/mysqld/mysqld.sock
+  username: postgres
+  password: postgres
 
 development:
   <<: *default
@@ -50,5 +49,6 @@ test:
 production:
   <<: *default
   database: social_app_production
-  username: root
-  password: root
+  username: postgres
+  password: postgres
+  template: template0
