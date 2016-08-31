@@ -49,5 +49,5 @@ test:
 production:
   <<: *default
   database: social_app_production
-  username: postgres
-  password: postgres
+  username: social_app
+  password: social_app
