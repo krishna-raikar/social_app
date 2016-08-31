@@ -13,8 +13,8 @@ default: &default
   adapter: postgresql
   encoding: unicode
   pool: 5
-  username: postgres
-  password: postgres
+  username: social_app
+  password: social_app
 
 development:
   <<: *default
@@ -49,5 +49,3 @@ test:
 production:
   <<: *default
   database: social_app_production
-  username: social_app
-  password: social_app
